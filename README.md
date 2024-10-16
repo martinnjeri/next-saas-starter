@@ -21,30 +21,30 @@ Fun fact: the majority of the UI for this application was built with [v0](https:
 
 ## Features
 
-- Marketing landing page (`/`) with animated Terminal element
-- Pricing page (`/pricing`) which connects to Stripe Checkout
-- Dashboard pages with CRUD operations on users/teams
-- Basic RBAC with Owner and Member roles
-- Subscription management with Stripe Customer Portal
-- Email/password authentication with JWTs stored to cookies
-- Global middleware to protect logged-in routes
-- Local middleware to protect Server Actions or validate Zod schemas
-- Activity logging system for any user events
+-   Marketing landing page (`/`) with animated Terminal element
+-   Pricing page (`/pricing`) which connects to Stripe Checkout
+-   Dashboard pages with CRUD operations on users/teams
+-   Basic RBAC with Owner and Member roles
+-   Subscription management with Stripe Customer Portal
+-   Email/password authentication with JWTs stored to cookies
+-   Global middleware to protect logged-in routes
+-   Local middleware to protect Server Actions or validate Zod schemas
+-   Activity logging system for any user events
 
 ## Tech Stack
 
-- **Framework**: [Next.js](https://nextjs.org/)
-- **Database**: [Postgres](https://www.postgresql.org/)
-- **ORM**: [Drizzle](https://orm.drizzle.team/)
-- **Payments**: [Stripe](https://stripe.com/)
-- **UI Library**: [shadcn/ui](https://ui.shadcn.com/)
+-   **Framework**: [Next.js](https://nextjs.org/)
+-   **Database**: [Postgres](https://www.postgresql.org/)
+-   **ORM**: [Drizzle](https://orm.drizzle.team/)
+-   **Payments**: [Stripe](https://stripe.com/)
+-   **UI Library**: [shadcn/ui](https://ui.shadcn.com/)
 
 ## Getting Started
 
 ```bash
 git clone https://github.com/leerob/next-saas-starter
 cd next-saas-starter
-pnpm install
+npm install
 ```
 
 ## Running Locally
@@ -52,27 +52,27 @@ pnpm install
 Use the included setup script to create your `.env` file:
 
 ```bash
-pnpm db:setup
+npm run db:setup
 ```
 
 Then, run the database migrations and seed the database with a default user and team:
 
 ```bash
-pnpm db:migrate
-pnpm db:seed
+npm run db:migrate
+npm run db:seed
 ```
 
 This will create the following user and team:
 
-- User: `test@test.com`
-- Password: `admin123`
+-   User: `test@test.com`
+-   Password: `admin123`
 
 You can, of course, create new users as well through `/sign-up`.
 
 Finally, run the Next.js development server:
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the app in action.
@@ -87,9 +87,9 @@ stripe listen --forward-to localhost:3000/api/stripe/webhook
 
 To test Stripe payments, use the following test card details:
 
-- Card Number: `4242 4242 4242 4242`
-- Expiration: Any future date
-- CVC: Any 3-digit number
+-   Card Number: `4242 4242 4242 4242`
+-   Expiration: Any future date
+-   CVC: Any 3-digit number
 
 ## Going to Production
 
@@ -121,6 +121,6 @@ In your Vercel project settings (or during deployment), add all the necessary en
 
 While this template is intentionally minimal and to be used as a learning resource, there are other paid versions in the community which are more full-featured:
 
-- https://achromatic.dev
-- https://shipfa.st
-- https://makerkit.dev
+-   https://achromatic.dev
+-   https://shipfa.st
+-   https://makerkit.dev
